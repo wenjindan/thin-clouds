@@ -6,5 +6,6 @@ package com.thin.base.common;
  * @Auther: wenjin.dan
  * @Date: 2019/4/9 19:04
  */
-public class Constants {
+public interface Constants {
+    int test=3001;
 }

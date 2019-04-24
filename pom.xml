@@ -31,6 +31,10 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RC1</spring-cloud.version>
         <thin-cloud.version>1.0.0-SNAPSHOT</thin-cloud.version>
+        <mybatis.starter.version>1.3.2</mybatis.starter.version>
+        <mapper.starter.version>2.0.2</mapper.starter.version>
+        <mysql.version>5.1.32</mysql.version>
+        <pageHelper.starter.version>1.2.3</pageHelper.starter.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +46,30 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- mybatis启动器 -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.starter.version}</version>
+            </dependency>
+            <!-- 通用Mapper启动器 -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper.starter.version}</version>
+            </dependency>
+            <!-- 分页助手启动器 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pageHelper.starter.version}</version>
+            </dependency>
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
